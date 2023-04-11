@@ -15,23 +15,29 @@
 # Cài đặt kali-linux trên WSL version 2
 *Hầu hết các version win10, 11 hiện tại đều trên 1903 nên đều hỗ trợ WSL*
 
-1. Bật tính năng WSL trên Windows bằng cách mở Command Prompt với quyền Administrator và chạy lệnh sau:
+1. Set up kennel cho wsl
+
+Tải và cài đặt [Kernel](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) cho WSL 2  
+![kernel](images/Kernel.png)
+
+
+2. Bật tính năng WSL trên Windows bằng cách mở Command Prompt với quyền Administrator và chạy lệnh sau:
 ```` cmd
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ````    
 ![turnonwsl](images/TurnonWSL.png)
 
-2. Thay đổi version của WSL bằng dòng lệnh
+3. Thay đổi version của WSL bằng dòng lệnh
 ```` cmd
 wsl --set-default-version 2
 ````
 ![setver2](images/setver2.png)
 
-3. Mở **Microsoft Store** tìm kiếm **kali linux** và tải về  
+4. Mở **Microsoft Store** tìm kiếm **kali linux** và tải về  
 
 ![dowloadkali](images/downloadkali.png)
 
-4. Tiến hành mở kali và cài đặt
+5. Tiến hành mở kali và cài đặt
 
 - Đây là giao diện khi cài đặt xong 
 
@@ -77,7 +83,7 @@ Ví dụ
 wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.tgz
 ````
 
-*Note: Phiên bản hiện tại là 0.10.1, bạn có thể chọn các phiên bản thấp hơn để cài đặt*
+*Note: Phiên bản hiện tại là 0.10.1, bạn có thể chọn các phiên bản thấp hơn để cài đặt*  
 *Nhớ địa chỉ lưu file tải xuống là thư mục **Zeppelin** tạo ở **bước 1***
 
 - Sau khi tải xong giải nén bằng cách gõ lệnh
