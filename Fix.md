@@ -29,4 +29,22 @@
   *Note: bạn có thể sử dụng các trình soạn thảo khác ngoài vim*
 
 - Sửa ip tại tag **\<name\>zeppelin.server.addr\</name\>** từ **127.0.0.1** thành **0.0.0.0**
+  
   ![address](images/address.png)
+
+- Lưu lại và chạy zeppelin
+  
+  ````sh
+  ./bin/zeppelin-daemon.sh restart
+  ````
+
+- Kiểm tra ip của máy ảo
+  
+  ````cmd
+  ifconfig
+  ````
+  ![ifconfig](images/ifconfig.png)
+
+- Vào mở lại trình duyệt mà đi đến đường dẫn [172.25.179.21:8080](172.25.179.21:8080)
+  
+  *Note: địa chỉ ip ở trong đường dẫn là địa chỉ ip của máy ảo*
