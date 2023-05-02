@@ -47,7 +47,7 @@ wsl --set-default-version 2
 
 ```` cmd
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
 ````
 
 # Cài đặt Zeppelin trên WSL kali
@@ -55,7 +55,7 @@ sudo apt-get upgrade
 1. Tải **Java Development Kit (JDK)**
    
 ```` cmd
-sudo apt-get install default-jdk
+sudo apt-get install -y default-jdk
 ````
 
 2. Tạo folder **Zeppelin**
@@ -89,7 +89,7 @@ wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.t
 - Sau khi tải xong giải nén bằng cách gõ lệnh
 
 ```` cmd
-tar -xzf zeppelin-0.10.1-bin-all.tgz
+tar -xzvf zeppelin-0.10.1-bin-all.tgz
 ````
 
 4. Giải nén xong tiến hành vào thư nục gốc của zeppelin
