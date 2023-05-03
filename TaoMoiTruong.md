@@ -9,7 +9,7 @@
 1. Tải và cài đặt Apache spark
    
    ````sh
-   wget https://dlcdn.apache.org/spark/spark-3.4.0/spark-3.4.0-bin-hadoop3.tgz
+   wget https://dlcdn.apache.org/spark/spark-3.2.4/spark-3.2.4-bin-hadoop3.2.tgz
    tar -zxvf spark-3.2.4-bin-hadoop3.2.tgz
    ````
 
@@ -23,7 +23,7 @@
    
    ````sh
    export SPARK_HOME=/opt/spark
-   export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+   export PATH=$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
    ````
 
 4. Chạy lệnh sau để kiểm tra
